@@ -1,31 +1,26 @@
 ﻿#include <iostream>
 #include <vector>
-
-#include "Pass.h"
-#include "Student.h"
-#include "Group.h"
+#include <string>
 
 #include "Message.h"
-#include "Functions.h"
+
+
+#include "Menu.h"
+#include "Group.h"
+
 
 using namespace std;
 
+
+
+
 int main()
 {
+    system("chcp 1251>0");
 
-    vector<Pass> temp_Pass{ 3 };
-    vector<Student> temp_Student{ 3 };
-    vector<Group> temp_Group{ 3 };
+    Menu menu;
 
-    print(str_Vec_Pass(temp_Pass));
-    /*print(str_Vec_Student(temp_Student));
-    print(str_Vec_Group(temp_Group));*/
-
-    fill_Pass(temp_Pass);
-
-    print(str_Vec_Pass(temp_Pass));
-
-
+    menu.main_Menu();
 
 
 
